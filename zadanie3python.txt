@@ -1,0 +1,12 @@
+print("Witaj w programie")
+io = int(input("Podaj liczbe ocen: "))
+suma = 0
+for i in range(1, io + 1):
+    o = float(input(f"Podaj ocene {i}: "))
+    suma += o
+avg = suma / io
+print("Średnia:", round(avg, 2))
+if avg >= 3.0:
+    print("Uczeń zdał.")
+else:
+    print("Uczeń nie zdał.")
