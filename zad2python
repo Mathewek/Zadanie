@@ -1,0 +1,24 @@
+print("Konwerter temperatur")
+
+while True:
+    print("1. Z Celsjusza na Fahrenheita")
+    print("2. Z Fahrenheita na Celsjusza")
+    print("3. Zakończ")
+
+    konwersja = input("Podaj jednostkę do konwersji: ")
+
+    if konwersja == "1":
+        c = float(input("Podaj temperaturę w stopniach Celsjusza: "))
+        f = c * 1.8 + 32
+        print("Temperatura w Fahrenheitach:", round(f, 2))
+        break
+    elif konwersja == "2":
+        f = float(input("Podaj temperaturę w stopniach Fahrenheita: "))
+        c = (f - 32) / 1.8
+        print("Temperatura w Celsjuszach:", round(c, 2))
+        break
+    elif konwersja == "3":
+        print("Do zobaczenia!")
+        break
+    else:
+        print("Zły wybór, spróbuj ponownie.")
