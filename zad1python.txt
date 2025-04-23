@@ -1,0 +1,12 @@
+l1 = float(input("Podaj pierwszą liczbę: "))
+l2 = float(input("Podaj drugą liczbę: "))
+dzialanie = input("Wybierz operację (+, -, *, /): ")
+if dzialanie == "+":
+    wynik = l1 + l2
+elif dzialanie == "-":
+    wynik = l1 - l2
+elif dzialanie == "*":
+    wynik = l1 * l2
+elif dzialanie == "/":
+    wynik = l1 / l2
+print("Wynik:", wynik)
